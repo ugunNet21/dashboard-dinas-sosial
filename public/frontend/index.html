@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pelayanan Dinas Sosial Kota Bandung</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dinas Sosial Bandung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Menu
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Dashboard</li>
+                        <li class="list-group-item">Data Pengguna</li>
+                        <li class="list-group-item">Laporan</li>
+                        <li class="list-group-item">Pengaturan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Dashboard
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Selamat Datang di Pelayanan Dinas Sosial Kota Bandung</h5>
+                        <p class="card-text">Ini adalah dashboard untuk mengelola layanan sosial di kota Bandung.</p>
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center">
+                                    <div class="card-header bg-success text-white">
+                                        Pengguna Aktif
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" id="active-users">0</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center">
+                                    <div class="card-header bg-info text-white">
+                                        Layanan Tersedia
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" id="available-services">0</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card text-center">
+                                    <div class="card-header bg-warning text-white">
+                                        Laporan Masuk
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" id="incoming-reports">0</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <canvas id="serviceChart" width="400" height="150"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
